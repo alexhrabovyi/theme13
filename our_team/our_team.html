@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- SVG Icons Section -->
+
+    <svg display="none">
+        <symbol id="facebook_icon" viewBox="0 0 30 30">
+            <rect x="1" y="1" width="28" height="28" rx="14" fill="white" stroke-width="2" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M22 15C22 11.1344 18.8656 8 15 8C11.1344 8 8 11.1344 8 15C8 18.4937 10.5594 21.3897 13.9062 21.9153V17.0241H12.1284V15H13.9062V13.4578C13.9062 11.7037 14.9516 10.7341 16.5503 10.7341C17.3162 10.7341 18.1175 10.8709 18.1175 10.8709V12.5938H17.2344C16.3653 12.5938 16.0934 13.1331 16.0934 13.6875V15H18.0347L17.7247 17.0241H16.0938V21.9159C19.4406 21.3906 22 18.4947 22 15Z"
+                stroke="none" />
+        </symbol>
+
+        <symbol id="twitter_icon" viewBox="0 0 30 30">
+            <rect x="1" y="1" width="28" height="28" rx="14" fill="white" stroke-width="2" />
+            <path
+                d="M23 10.4219C22.4373 10.6664 21.842 10.8274 21.2328 10.9C21.873 10.5251 22.3545 9.92956 22.5869 9.22501C21.9816 9.57894 21.3205 9.82728 20.6319 9.95938C20.3419 9.65548 19.9932 9.41373 19.6069 9.2488C19.2205 9.08388 18.8047 8.99923 18.3847 9.00001C16.6841 9.00001 15.3078 10.3563 15.3078 12.0281C15.3066 12.2607 15.3333 12.4925 15.3872 12.7188C14.1677 12.6616 12.9736 12.3505 11.8812 11.8054C10.7889 11.2603 9.82234 10.4932 9.04344 9.55313C8.77018 10.0138 8.62567 10.5394 8.625 11.075C8.625 12.125 9.17281 13.0531 10 13.5969C9.50991 13.5852 9.02987 13.4555 8.60063 13.2188V13.2563C8.60063 14.725 9.66313 15.9469 11.0694 16.225C10.8049 16.2955 10.5324 16.3312 10.2587 16.3313C10.0646 16.3316 9.8708 16.3128 9.68031 16.275C10.0712 17.4781 11.2091 18.3531 12.5569 18.3781C11.4617 19.2222 10.1171 19.6784 8.73438 19.675C8.48894 19.6746 8.24374 19.66 8 19.6313C9.40662 20.5294 11.0417 21.0045 12.7106 21C18.3781 21 21.4744 16.3844 21.4744 12.3813C21.4744 12.25 21.4709 12.1188 21.4647 11.9906C22.0657 11.5631 22.5856 11.0319 23 10.4219Z"
+                stroke="none" />
+        </symbol>
+
+        <symbol id="google_icon" viewBox="0 0 30 30">
+            <rect x="1" y="1" width="28" height="28" rx="14" fill="white" stroke-width="2" />
+            <path
+                d="M21.6534 13.9212L21.5828 13.6216H15.0691V16.3784H18.9609C18.5569 18.2972 16.6819 19.3072 15.1503 19.3072C14.0359 19.3072 12.8612 18.8384 12.0837 18.085C11.6735 17.6811 11.347 17.2003 11.1229 16.6701C10.8987 16.1399 10.7814 15.5706 10.7775 14.995C10.7775 13.8337 11.2994 12.6722 12.0588 11.9081C12.8181 11.1441 13.965 10.7166 15.1053 10.7166C16.4113 10.7166 17.3472 11.41 17.6972 11.7263L19.6562 9.7775C19.0816 9.2725 17.5028 8 15.0422 8C13.1438 8 11.3234 8.72719 9.99281 10.0534C8.67969 11.3594 8 13.2478 8 15C8 16.7522 8.64313 18.5463 9.91563 19.8625C11.2753 21.2663 13.2009 22 15.1838 22C16.9878 22 18.6978 21.2931 19.9166 20.0106C21.1147 18.7481 21.7344 17.0013 21.7344 15.17C21.7344 14.3991 21.6569 13.9412 21.6534 13.9212Z"
+                stroke="none" />
+        </symbol>
+
+        <symbol id="linkedin_icon" viewBox="0 0 30 30">
+            <rect x="1" y="1" width="28" height="28" rx="14" fill="white" stroke-width="2" />
+            <path
+                d="M20.8803 8H9.19625C8.55781 8 8 8.45937 8 9.09031V20.8003C8 21.4347 8.55781 22 9.19625 22H20.8769C21.5188 22 22 21.4309 22 20.8003V9.09031C22.0037 8.45937 21.5188 8 20.8803 8ZM12.3397 19.6697H10.3341V13.4338H12.3397V19.6697ZM11.4062 12.4856H11.3919C10.75 12.4856 10.3344 12.0078 10.3344 11.4097C10.3344 10.8006 10.7609 10.3341 11.4172 10.3341C12.0734 10.3341 12.475 10.7972 12.4894 11.4097C12.4891 12.0078 12.0734 12.4856 11.4062 12.4856ZM19.6697 19.6697H17.6641V16.26C17.6641 15.4431 17.3722 14.885 16.6466 14.885C16.0922 14.885 15.7641 15.26 15.6181 15.6253C15.5634 15.7566 15.5487 15.9353 15.5487 16.1178V19.6697H13.5431V13.4338H15.5487V14.3016C15.8406 13.8859 16.2966 13.2878 17.3575 13.2878C18.6741 13.2878 19.67 14.1556 19.67 16.0266L19.6697 19.6697Z"
+                stroke="none" />
+        </symbol>
+    </svg>
+
+    <!-- End of SVG Icons Sections -->
+
+    <section class="main-wrapper">
+        <header class="main-wrapper__header">
+            <h3 class="subtitle main-wrapper__header__subtitle">The geniuses behind our work</h3>
+            <h1 class="title main-wrapper__header__title">OUR TEAM</h1>
+            <div class="bonfire-icon main-wrapper__header__bonfire-icon">
+                <img src="img/bonfire.svg" alt="Bonfire Icon">
+            </div>
+        </header>
+        <main class="main-wrapper__main">
+            <div class="photo-block main-wrapper__main__photo-block">
+                <div class="photo-block__rectangle">
+                    <img class="profile-picture photo-block__rectangle__profile-picture" src="img/photo.jpg"
+                        alt="Profile Picture">
+                </div>
+                <a class="chevron chevron_left photo-block__chevron_left" href="#"></a>
+            </div>
+            <div class="description-block main-wrapper__main__description-block">
+                <h3 class="title title_grey description-block__title_grey">Sahariar Kabir</h3>
+                <h4 class="headline description-block__headline">Frontend Developer</h4>
+                <div class="links-block description-block__links-block">
+                    <a class="link links-block__link" href="#" alt="Facebook">
+                        <svg class="link__svg">
+                            <use xlink:href="#facebook_icon"></use>
+                        </svg>
+                    </a>
+                    <a class="link links-block__link" href="#" alt="Twitter">
+                        <svg class="link__svg">
+                            <use xlink:href="#twitter_icon"></use>
+                        </svg>
+                    </a>
+                    <a class="link links-block__link" href="#" alt="Google">
+                        <svg class="link__svg">
+                            <use xlink:href="#google_icon"></use>
+                        </svg>
+                    </a>
+                    <a class="link links-block__link" href="#" alt="LinkedIn">
+                        <svg class="link__svg">
+                            <use xlink:href="#linkedin_icon"></use>
+                        </svg>
+                    </a>
+                </div>
+                <p class="text description-block__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus dui sit amet ligula efficitur,
+                    sit amet lacinia massa dictum. Etiam accumsan felis a nunc facilisis, ut euismod lacus placerat.
+                    Praesent rutrum eget massa a convallis. Nam vitae augue malesuada, accumsan mauris ut, consectetur.
+                </p>
+                <div class="description-block__yellow-line"></div>
+                <button class="button description-block__button">View profile</button>
+                <a class="chevron chevron_right description-block__chevron_right" href="#"></a>
+            </div>
+            <div class="circle-links main-wrapper__main__circle-links">
+                <a class="circle-link circle-links__circle-link" href="#"></a>
+                <a class="circle-link circle-link_white circle-links__circle-link" href="#"></a>
+                <a class="circle-link circle-links__circle-link" href="#"></a>
+            </div>
+        </main>
+    </section>
+</body>
+
+</html>

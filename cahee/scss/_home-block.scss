@@ -1,0 +1,94 @@
+.home-wrapper {
+    width: 100%;
+    height: 1000px;
+    padding: 50px 180px 0;
+    @include cover-background;
+    background-image: url(../img/home_bg.jpg);
+    position: relative;
+}
+
+.home-wrapper__nav {
+    @include flex-center-center;
+    justify-content: space-between;
+}
+
+.nav-links__nav-link {
+    margin: 0 18px;
+}
+
+.nav-link {
+    padding-top: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color: $black;
+    text-transform: uppercase;
+    border: solid transparent;
+    border-width: 3px 0 0;
+
+    &:hover, &:focus {
+        outline: none;
+        border-color: $orange;
+    }
+
+    &:active {
+        border-color: $orange-active;
+    }
+}
+
+.home-wrapper__header {
+    margin-top: 282px;
+}
+
+.home-wrapper__header__title {
+    margin-bottom: 15px;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 60px;
+    color: $black;
+}
+
+.home-wrapper__header__text {
+    width: 380px;
+    margin-bottom: 28px;
+}
+
+.text {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 27px;
+    color: $black;
+}
+
+.button {
+    width: 200px;
+    height: 55px;
+    background: $orange;
+    border: solid 1px transparent;
+    font-weight: 300;
+    font-size: 20px;
+    color: $white;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    
+    &:hover, &:focus {
+        outline: none;
+        border-color: $orange;
+        background: $white;
+        color: $orange;
+    }
+
+    &:active {
+        background: $white-active;
+    }
+}
+
+.home-wrapper__header__scroll-icon {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}

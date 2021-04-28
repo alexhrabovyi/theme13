@@ -1,0 +1,129 @@
+.form-wrapper {
+    width: 100%;
+    height: 956px;
+}
+
+.form-wrapper__article {
+    width: 100%;
+    height: 866px;
+    @include cover-background;
+    background-image: url(../img/contact_bg.jpg);
+    @include flex-column;
+}
+
+.form-wrapper__article__title-thinner {
+    margin-bottom: 30px;
+}
+
+.form-wrapper__article__text_center {
+    width: 346px;
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+
+.form-block {
+    display: flex;
+}
+
+.main-form {
+    width: 553px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-input {
+    width: 100%;
+    height: 50px;
+    padding: 0 22px;
+    font-weight: 300;
+    font-size: 15px;
+    background: $aqua-alfa;
+    border: solid transparent;
+    border-width: 0 0 0 5px;
+    margin-bottom: 15px;
+
+    &:hover {
+        background: $aqua;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: $dark-blue;
+        background: $aqua;
+        font-weight: 700;
+        color: $white;
+    }
+}
+
+.main-input_textarea {
+    padding: 16px 22px;
+    height: 250px;
+    resize: none;
+}
+
+.main-input::-webkit-input-placeholder {
+    color: $white;
+}
+
+textarea::-webkit-input-placeholder {
+    color: $white;
+}
+
+.button_blue_small {
+    width: 170px;
+
+    &:hover, &:focus {
+        color: $white;
+        border-color: rgb(72, 113, 138);
+        background: rgb(72, 113, 138);
+    }
+
+    &:active {
+        background: rgb(54, 85, 104);
+        border-color: rgb(54, 85, 104);
+    }
+}
+
+.form-block__desc {
+    width: 553px;
+    padding-left: 121px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-block__desc__title {
+    font-weight: 700;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: $black;
+    margin-bottom: 5px;
+}
+
+.form-block__desc__text {
+    font-weight: 400;
+    font-size: 17px;
+    color: $black;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.footer {
+    width: 100%;
+    height: 90px;
+    padding: 0 200px;
+    background: $black;
+    @include flex-center-center;
+    justify-content: space-between;
+}
+
+.footer__text {
+    font-weight: 300;
+    font-size: 16px;
+    color: $light-grey;
+    text-decoration: none;
+}
+
+.footer__text_red {
+    font-weight: 700;
+    color: $red;
+}

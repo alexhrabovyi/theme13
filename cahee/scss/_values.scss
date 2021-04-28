@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap');
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.1s ease-in;
+    font-family: "Raleway", sans-serif;
+}
+
+$black: rgb(38, 38, 38);
+$orange: rgb(255, 96, 51);
+$orange-hover: rgb(226, 82, 42);
+$orange-active: rgb(184, 67, 35);
+$white: rgb(255, 255, 255);
+$white-hover: rgb(247, 247, 247);
+$white-active: rgb(216, 216, 216);
+$grey: rgb(157, 157, 157);
+$light-grey: rgb(185, 185, 185);
+$yellow: rgb(255, 233, 47);
+$blue: rgb(85, 133, 162);
+$dark-blue: rgb(53, 91, 130);
+$green: rgb(150, 185, 44);
+$violet: rgb(176, 124, 247);
+$red: rgb(247, 43, 59);
+$aqua: rgb(0, 196, 196);
+$aqua-alfa: rgba(0, 196, 196, 0.5);
+
+@mixin cover-background {
+    background:center center no-repeat;
+    background-size: cover;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-center-center {
+    @include flex-center;
+    align-items: center;
+}
+
+@mixin flex-column {
+    flex-direction: column;
+    @include flex-center-center;
+}

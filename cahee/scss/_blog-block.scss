@@ -1,0 +1,136 @@
+.blog-wrapper {
+    width: 100%;
+    height: 864px;
+    background: $violet;
+    @include flex-column;
+}
+
+.blog-wrapper__header {
+    @include flex-column;
+    margin-bottom: 50px;
+}
+
+.blog-wrapper__header__title-white {
+    margin-bottom: 30px;
+}
+
+.blog-wrapper__header__text_white_center {
+    width: 592px;
+}
+
+.text_white_center {
+    line-height: 25px;
+    text-align: center;
+}
+
+.blog-wrapper__nav {
+    @include flex-center;
+}
+
+.blog-link {
+    width: 364px;
+    height: 314px;
+    position: relative;
+    margin: 0 12px;
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.5));
+
+    &:hover {
+        outline: none;
+        transform: scale(1.03);
+    }
+}
+
+.blog-link__image-link__img {
+    display: block;
+    width: 364px;
+    height: 314px;
+    position: relative;
+}
+
+.blog-link__text {
+    width: 100%;
+    height: 90px;
+    padding-left: 20px;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+
+.blog-link__text__blog-name {
+    display: block;
+    width: 304px;
+    font-weight: 700;
+    font-size: 20px;
+    color: $white;
+    text-decoration: none;
+    margin-bottom: 10px;
+
+    &:hover, &:focus {
+        outline: none;
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: $white-active;
+    }
+}
+
+.blog-link__text__author {
+    display: flex;
+    font-weight: 300;
+    font-size: 13px;
+    color: $white;
+}
+
+.blog-link__text__author__name {
+    text-decoration: none;
+    color: $white;
+    margin-right: 3px;
+
+    &:hover, &:focus {
+        outline: none;
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: $white-active;
+    }
+}
+
+.blog-link__date {
+    @include flex-column;
+    width: 60px;
+    height: 60px;
+    padding-bottom: 9px;
+    border-radius: 5px;
+    background: rgba(38, 38, 38, 0.5);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.blog-link__date__day {
+    font-weight: 700;
+    font-size: 32px;
+    color: $white;
+}
+
+.blog-link__date__month {
+    font-weight: 900;
+    font-size: 21px;
+    color: $white;
+}
+
+.blog-wrapper__nav__button_red {
+    margin-top: 50px;
+}
+
+.button_red {
+    background: $red;
+
+    &:hover, &:focus {
+        color: $red;
+        border-color: $red;
+    }
+}
